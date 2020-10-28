@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+
+    <script src=jquery-2.2.4.min.js></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <meta charset="utf-8">
+    <title>觀音高中諮商室借用系統</title>
+
+    <script>
+   var parameter = {};
+   var datedata;
+   var registerdata;
+   var y;
+   var i=1;
+   var z=0;
+  
+
+    $.get("https://script.google.com/macros/s/AKfycbxu3TT3FCo430Dcdtnx27oC9PTVUlO0x9RTBw558WtMeUfER10/exec", parameter, function(data) {
+        
+            datedata=data.split(",");
+
+             $.get("https://script.google.com/macros/s/AKfycbwhasU6XoDxoduoyVz0JYzVbyZzYKRohaY3AiWRG8xm7WFiX0u5/exec", parameter, function(data) {
+        
+            registerdata=data.split(",");
+      
+           
+        
+            });  
+
+        
+      });  
+
+
+    </script>
+ 
+</head>
+    
+    
+<body>
+<h2 align="center" style="color:blue;">觀音高中109學年度校慶成績登記系統</h2>
+
+    <div id="password" align="center">
+    <input type="password"  style="text-align:center;" id="passcode" placeholder="請輸入密碼"><button id="sendBtn" onclick="send()">送出</button>
+    </div>
+</body>
+<
