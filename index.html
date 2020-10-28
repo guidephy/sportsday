@@ -5,17 +5,22 @@
     <script src=jquery-2.2.4.min.js></script>
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>觀音高中109學年度校慶競賽成績查詢</title>
 
     <script >
+        
+        function resize() {
+        parent.document.getElementById("mainframe").height = document.body.scrollHeight; //將子頁面高度傳到父頁面框架
+    }
     </script>
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   
 </head>
     
     
-<body>
+<body onload="resize();">
     <h2 align="center" style="color:blue;">觀音高中109學年度校慶競賽成績查詢</h2>
-<iframe width='500' height='300' frameborder='0' src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRdliKobnRCUzKhg0Sp2jvJn3hvHVMK2_Rn15EUsJU-WM1QPp2fquY7XgQNTS8ECnZu-H6oIhb8JTxx/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>    
+<iframe  width="100%" marginwidth="0" marginheight="0" scrolling="No" frameborder="0" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRdliKobnRCUzKhg0Sp2jvJn3hvHVMK2_Rn15EUsJU-WM1QPp2fquY7XgQNTS8ECnZu-H6oIhb8JTxx/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>    
 </body>
