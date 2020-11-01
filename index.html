@@ -184,29 +184,12 @@
                 
                 for (var y=1;y<=49;y++){
                     document.getElementById(y).innerHTML=pointdata[y]; 
+                    document.getElementById(y).style.color = 'red';
 
                 }
-       
-                 }, 2000);
-        
-        setInterval(function(){ 
-                
-                    $.get("https://script.google.com/macros/s/AKfycbygWxmCRGCmYot9b0mM3wT9xLKBMm1_rYmdZw3t3LwMrAONem0e/exec", parameter, function(data) {
-        
-                    pointdata=data.split(",");
-        
-          }); 
-                
-             setTimeout(function(){ 
-                
-                for (var y=1;y<=49;y++){
-                    document.getElementById(y).innerHTML=pointdata[y]; 
+       alert(pointdata);
 
-                }
-       
                  }, 2000);
-       
-                 }, 30000);
         
         
     </script>
