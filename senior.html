@@ -456,11 +456,6 @@
             
             setTimeout(function(){ 
                 
-                    $.get("https://script.google.com/macros/s/AKfycbxzIp8k8Wva99_6xajvw5LGAVUHSRXWMohe_4EFU71Om45up4c/exec", parameter, function(data) {
-        
-                    pointdata=data.split(",");
-        
-          }); 
                 for (var y=1;y<=289;y++){
                     document.getElementById(y).innerHTML=pointdata[y]; 
 
@@ -475,11 +470,16 @@
                     pointdata=data.split(",");
         
           }); 
+                
+            setTimeout(function(){ 
+                
                 for (var y=1;y<=289;y++){
                     document.getElementById(y).innerHTML=pointdata[y]; 
 
                 }
        
-                 }, 10000);
+                 }, 2000);
+       
+                 }, 30000);
         </script>
 </body>
