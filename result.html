@@ -2635,12 +2635,16 @@
 <script src="http://3s.nchu.edu.tw/backend/plugins/jQueryUI/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
-    $.widget.bridge('uibutton', $.ui.button);
+    //$.widget.bridge('uibutton', $.ui.button);
 </script>
 <script src="http://3s.nchu.edu.tw/backend/bootstrap/js/bootstrap.min.js"></script>
 <script src="http://3s.nchu.edu.tw/backend/dist/js/app.min.js"></script>
     <script>
-        
+
+        var x = document.getElementsByClassName("btn btn-primary");
+        for(var i=0;i<=100;i++){
+            x[i].value="";
+        }
     </script>
 
 </body>
