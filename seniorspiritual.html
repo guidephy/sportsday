@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+
+    <script src=jquery-2.2.4.min.js></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   
+    <title>觀音高中111學年度校慶成績查詢</title>
+
+    <script >
+        
+        var parameter = {};
+        var pointdata;
+        
+         $.get("https://script.google.com/macros/s/AKfycby9EnCce9djs0KSY2zLcMCv8SKpj1gcquiYgDwPWUxHZdpoww1VPD0SizvxRPvg3gDChA/exec", parameter, function(data) {
+        
+            pointdata=data.split(",");
+        
+      }); 
+        
+       
+        
+    </script>
+
+
+   
+</head>
+    
+    
+<body >
+    
+    <div style="text-align:center;" >
+        <p  ><font color="blue">觀音高中111學年度校慶暨運動會積分</p>
+    </div >
+    
+    <div style="text-align:center;" >
+    <input type="button" style="width:45%;background-color:yellow;border-radius:15px"   value="高中部各項積分" onclick="location.href='https://guidephy.github.io/sportsday/senior'">
+    <input type="button" style="width:45%;background-color:pink;border-radius:15px"     value="國中部各項積分" onclick="location.href='https://guidephy.github.io/sportsday/junior'"><br>
+    <input type="button" style="width:45%;border-radius:15px"   value="回上一頁" onclick="location.href='https://guidephy.github.io/sportsday'">
+    <input type="button" style="width:45%;background-color:pink;border-radius:15px"     value="國中部精神總錦標積分" onclick="location.href='https://guidephy.github.io/sportsday/juniorspiritual'">
+    </div>
+
+    <table border="1" style="border:3px #FFAC55 solid;padding:5px;width:90%;" rules="all"  align="center">
+　       <tr style="background-color:yellow" > 
+　           <td colspan="7" align="center">高中部精神總錦標各項目積分</td>
+　       </tr>
+    
+        <tr align="center" valign="middle"  style="border-bottom:3px #FFAC55  solid; ">
+            <td  ><font color="blue">班<br>級</td>
+            <td  ><font color="blue">競<br>賽<br>積<br>分</td>
+            <td  ><font color="blue">進<br>場<br>表<br>演</td>
+            <td  ><font color="blue">環<br>境<br>整<br>潔</td>
+            <td  ><font color="blue">精<br>神<br>表<br>現</td>
+            <td  ><font color="blue">總<br>積<br>分</td>
+            <td  ><font color="blue">總<br>排<br>名</td>
+        </tr>
+        
+      
+        
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">101</td>
+            <td  id="1"></td>
+            <td  id="2"></td>
+            <td  id="3"></td>
+            <td  id="4"></td>
+            <td  id="5"></td>
+            <td  id="6"></td>
+           
+
+　       </tr>
+        
+         <tr align="center" valign="middle" >
+            <td  ><font color="blue">102</td>
+　           <td  id="7"></td>
+            <td  id="8"></td>
+            <td  id="9"></td>
+            <td  id="10"></td>
+            <td  id="11"></td>
+            <td  id="12"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+            <td  ><font color="blue">103</td>
+　           <td  id="13"></td>
+            <td  id="14"></td>
+            <td  id="15"></td>
+            <td  id="16"></td>
+            <td  id="17"></td>
+            <td  id="18"></td>
+
+　       </tr>   
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">104</td>
+            <td  id="19"></td>
+            <td  id="20"></td>
+            <td  id="21"></td>
+            <td  id="22"></td>
+            <td  id="23"></td>
+            <td  id="24"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">105</td>
+            <td  id="25"></td>
+            <td  id="26"></td>
+            <td  id="27"></td>
+            <td  id="28"></td>
+            <td  id="29"></td>
+            <td  id="30"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">106</td>
+            <td  id="31"></td>
+            <td  id="32"></td>
+            <td  id="33"></td>
+            <td  id="34"></td>
+            <td  id="35"></td>
+            <td  id="36"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">107</td>
+            <td  id="37"></td>
+            <td  id="38"></td>
+            <td  id="39"></td>
+            <td  id="40"></td>
+            <td  id="41"></td>
+            <td  id="42"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" style="border-bottom:3px #FFAC55  solid;">
+　          <td  ><font color="blue">108</td>
+            <td  id="43"></td>
+            <td  id="44"></td>
+            <td  id="45"></td>
+            <td  id="46"></td>
+            <td  id="47"></td>
+            <td  id="48"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">201</td>
+            <td  id="49"></td>
+            <td  id="50"></td>
+            <td  id="51"></td>
+            <td  id="52"></td>
+            <td  id="53"></td>
+            <td  id="54"></td>
+
+　       </tr>
+        
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">202</td>
+            <td  id="55"></td>
+            <td  id="56"></td>
+            <td  id="57"></td>
+            <td  id="58"></td>
+            <td  id="59"></td>
+            <td  id="60"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">203</td>
+            <td  id="61"></td>
+            <td  id="62"></td>
+            <td  id="63"></td>
+            <td  id="64"></td>
+            <td  id="65"></td>
+            <td  id="66"></td>
+
+　       </tr>   
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">204</td>
+            <td  id="67"></td>
+            <td  id="68"></td>
+            <td  id="69"></td>
+            <td  id="70"></td>
+            <td  id="71"></td>
+            <td  id="72"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">205</td>
+            <td  id="73"></td>
+            <td  id="74"></td>
+            <td  id="75"></td>
+            <td  id="76"></td>
+            <td  id="77"></td>
+            <td  id="78"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">206</td>
+            <td  id="79"></td>
+            <td  id="80"></td>
+            <td  id="81"></td>
+            <td  id="82"></td>
+            <td  id="83"></td>
+            <td  id="84"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">207</td>
+            <td  id="85"></td>
+            <td  id="86"></td>
+            <td  id="87"></td>
+            <td  id="88"></td>
+            <td  id="89"></td>
+            <td  id="90"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" style="border-bottom:3px #FFAC55  solid;" >
+　          <td  ><font color="blue">208</td>
+            <td  id="91"></td>
+            <td  id="92"></td>
+            <td  id="93"></td>
+            <td  id="94"></td>
+            <td  id="95"></td>
+            <td  id="96"></td>
+
+　       </tr>
+                 <tr align="center" valign="middle" >
+　          <td  ><font color="blue">301</td>
+            <td  id="97"></td>
+            <td  id="98"></td>
+            <td  id="99"></td>
+            <td  id="100"></td>
+            <td  id="101"></td>
+            <td  id="102"></td>
+
+　       </tr>
+        
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">302</td>
+            <td  id="103"></td>
+            <td  id="104"></td>
+            <td  id="105"></td>
+            <td  id="106"></td>
+            <td  id="107"></td>
+            <td  id="108"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">303</td>
+            <td  id="109"></td>
+            <td  id="110"></td>
+            <td  id="111"></td>
+            <td  id="112"></td>
+            <td  id="113"></td>
+            <td  id="114"></td>
+
+　       </tr>   
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">304</td>
+            <td  id="115"></td>
+            <td  id="116"></td>
+            <td  id="117"></td>
+            <td  id="118"></td>
+            <td  id="119"></td>
+            <td  id="120"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">305</td>
+            <td  id="121"></td>
+            <td  id="122"></td>
+            <td  id="123"></td>
+            <td  id="124"></td>
+            <td  id="125"></td>
+            <td  id="126"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">306</td>
+            <td  id="127"></td>
+            <td  id="128"></td>
+            <td  id="129"></td>
+            <td  id="130"></td>
+            <td  id="131"></td>
+            <td  id="132"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　          <td  ><font color="blue">307</td>
+            <td  id="133"></td>
+            <td  id="134"></td>
+            <td  id="135"></td>
+            <td  id="136"></td>
+            <td  id="137"></td>
+            <td  id="138"></td>
+
+　       </tr>
+         <tr align="center" valign="middle" >
+　           <td  ><font color="blue">308</td>
+            <td  id="139"></td>
+            <td  id="140"></td>
+            <td  id="141"></td>
+            <td  id="142"></td>
+            <td  id="143"></td>
+            <td  id="144"></td>
+
+　       </tr>
+        </table>
+    
+     <div style="text-align:center;" >
+         
+    <input type="button" style="border-radius:15px;" value="決賽結果查詢" onclick="location.href='http://3s.nchu.edu.tw/81/game/result'">
+ 
+    </div>
+   
+        <script>
+            
+            setTimeout(function(){ 
+                setTimeout(function(){ 
+                    setTimeout(function(){ 
+                        setTimeout(function(){ 
+                            setTimeout(function(){ 
+                
+                for (var y=1;y<=145;y++){
+                    document.getElementById(y).innerHTML=pointdata[y]; 
+                     document.getElementById(y).style.color = 'red';
+
+                }
+       
+                 }, 1000);
+                
+                for (var y=1;y<=145;y++){
+                    document.getElementById(y).innerHTML=pointdata[y]; 
+                     document.getElementById(y).style.color = 'red';
+
+                }
+       
+                 }, 1000);
+                
+                for (var y=1;y<=145;y++){
+                    document.getElementById(y).innerHTML=pointdata[y]; 
+                     document.getElementById(y).style.color = 'red';
+
+                }
+       
+                 }, 1000);
+                
+                for (var y=1;y<=145;y++){
+                    document.getElementById(y).innerHTML=pointdata[y]; 
+                     document.getElementById(y).style.color = 'red';
+
+                }
+       
+                 }, 1000);
+                for (var y=1;y<=145;y++){
+                    document.getElementById(y).innerHTML=pointdata[y]; 
+                     document.getElementById(y).style.color = 'red';
+
+                }
+       
+                 }, 1000);
+            
+            setInterval(function(){ 
+                
+                    $.get("https://script.google.com/macros/s/AKfycby9EnCce9djs0KSY2zLcMCv8SKpj1gcquiYgDwPWUxHZdpoww1VPD0SizvxRPvg3gDChA/exec", parameter, function(data) {
+        
+                    pointdata=data.split(",");
+        
+          }); 
+                
+            setTimeout(function(){ 
+                
+                for (var y=1;y<=145;y++){
+                    document.getElementById(y).innerHTML=pointdata[y]; 
+                    document.getElementById(y).style.color = 'red';
+
+                }
+       
+                 }, 5000);
+       
+                 }, 30000);
+        </script>
+</body>
