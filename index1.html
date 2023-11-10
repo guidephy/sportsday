@@ -184,10 +184,10 @@
     <script>
 
        
+               $.get("https://script.google.com/macros/s/AKfycbygWxmCRGCmYot9b0mM3wT9xLKBMm1_rYmdZw3t3LwMrAONem0e/exec", parameter, function(data) {
         
-       setTimeout(function(){ 
-            
-                for (var y=1;y<=49;y++){
+            pointdata=data.split(",");
+             for (var y=1;y<=49;y++){
                     document.getElementById(y).innerHTML=pointdata[y]; 
                     document.getElementById(y).style.color = 'red';
                     document.getElementById(32).innerHTML="";
@@ -195,8 +195,9 @@
                     document.getElementById(48).innerHTML="";
 
                 }
-      }, 5000);
-              
+        
+      }); 
+  
        
 
 
@@ -205,18 +206,20 @@
                     $.get("https://script.google.com/macros/s/AKfycbygWxmCRGCmYot9b0mM3wT9xLKBMm1_rYmdZw3t3LwMrAONem0e/exec", parameter, function(data) {
         
                     pointdata=data.split(",");
+                     for (var y=1;y<=49;y++){
+                    document.getElementById(y).innerHTML=pointdata[y];
+                      document.getElementById(32).innerHTML="";
+                    document.getElementById(40).innerHTML="";
+                    document.getElementById(48).innerHTML=""; 
+                }
         
           }); 
                 
-            setTimeout(function(){ 
+         
                 
-                for (var y=1;y<=49;y++){
-                    document.getElementById(y).innerHTML=pointdata[y]; 
-
-                }
+              
        
-                 }, 5000);
-       
+                
                  }, 180000);
         
     </script>
